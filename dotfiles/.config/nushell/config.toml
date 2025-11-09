@@ -1,0 +1,29 @@
+# ~/.config/nushell/config.toml
+
+# Tell Nushell to source our "fzf.nu" on startup
+startup = ["source ~/.config/nushell/fzf.nu"]
+
+[keybindings]
+# ───────────────────────────────────────────────────────────────────────────────
+# Bind Ctrl-T to fzf‐select  (paste selected file-path into prompt)
+# Equivalent of the old Bash: ctrl-t → __fzf_select__
+# ───────────────────────────────────────────────────────────────────────────────
+"ctrl-t" = { command = "fzf-select", args = [] }
+
+# ───────────────────────────────────────────────────────────────────────────────
+# Bind Ctrl-R to fzf-history (paste the chosen history line into prompt)
+# Equivalent of the old Bash: ctrl-r → __fzf_history__
+# ───────────────────────────────────────────────────────────────────────────────
+"ctrl-r" = { command = "fzf-history", args = [] }
+
+# ───────────────────────────────────────────────────────────────────────────────
+# Bind Alt-C to fzf-cd (fuzzy‐select a directory, then cd there)
+# Equivalent of the old Bash: alt-c → __fzf_cd__
+# ───────────────────────────────────────────────────────────────────────────────
+"alt-c" = { command = "fzf-cd", args = [] }
+
+# ───────────────────────────────────────────────────────────────────────────────
+# (Optional) Bind e.g. Ctrl-P to fzf-process (pick a PID from ps)
+# Equivalent to the old Bash: bind fzf-proc
+# ───────────────────────────────────────────────────────────────────────────────
+"ctrl-p" = { command = "fzf-process", args = [] }

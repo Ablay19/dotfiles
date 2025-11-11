@@ -1,22 +1,3 @@
-  },
-  "settings": {
-    "executionOrder": "v1"
-  },
-  "active": false
-}'
-curl -X POST "https://n8n-49ap.onrender.com/rest/workflows"   -H "Content-Type: application/json"   -H "X-N8N-API-KEY: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJzdWIiOiI1NGE0NmRmMy01YzM0LTQ1NWQtYmU0Zi0xMDZmY2Q1Zjg3YjAiLCJpc3MiOiJuOG4iLCJhdWQiOiJwdWJsaWMtYXBpIiwiaWF0IjoxNzYxOTgzNjI3fQ.hBx9dK_Bd-egZYK2R0LZbaz48xJM34dyjsfjXpetqBA"   -d '{
-  "name": "Extract RimNow News Details",
-  "nodes": [
-    {
-      "parameters": {
-        "url": "https://rimnow.com",
-        "responseFormat": "string"
-      },
-      "id": "1",
-      "name": "Fetch RimNow Page",
-      "type": "n8n-nodes-base.httpRequest",
-      "typeVersion": 4.3,
-      "position": [-500, 0]
     },
     {
       "parameters": {
@@ -498,3 +479,22 @@ node package/bin/opencode
 export BUN_INSTALL="$HOME/.bun"
 bun
 vi .bun/bin/bun 
+adb shell dumpsys account|grep -i com.*$ -o|cut -d' ' -f1|cut -d} -f1|grep -v com$
+gcc parser.c -o parser `xml2-config --cflags --libs`
+gcc rim. -o parser `xml2-config --cflags --libs`
+gcc rim.c -o parser `xml2-config --cflags --libs`
+./parser rim.html 
+l
+fi
+# اجلب كل المسارات، شيل بادئة package:، وحفِظها محليًا
+adb shell pm path com.tagpay.mwallet.masrvi | sed 's/^package://' > /tmp/paths.txt
+cat /tmp/paths.txt
+# أنشئ مجلداً محلياً وااسحب كل ملف منفرداً
+mkdir -p ~/bank_split
+while read -r p; do   name=$(basename "$p");   adb pull "$p" "~/bank_split/$name"; done < /tmp/paths.txt
+# اجلب كل المسارات، شيل بادئة package:، وحفِظها محليًا
+adb shell pm path com.tagpay.mwallet.masrvi | sed 's/^package://' > /tmp/paths.txt
+cat /tmp/paths.txt
+# أنشئ مجلداً محلياً وااسحب كل ملف منفرداً
+mkdir -p ~/bank_split
+while read -r p; do   name=$(basename "$p");   adb pull "$p" "~/bank_split/$name"; done < /tmp/paths.txt

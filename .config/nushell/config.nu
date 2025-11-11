@@ -912,8 +912,8 @@ $env.config = {
     ]
 }
 
-def --env cx [arg] {
-    cd $arg
+def --env cx [$arg] {
+    z $arg
     ls -l
 }
 
@@ -971,6 +971,4 @@ def --env up [] {
 source ~/.atuin.nu
 source ~/.config/atuin/.atuin.nu
 source $"($nu.cache-dir)/carapace.nu"
-let ruby_ver = "3.4.0"
-let gem_home = ($nu.home-path | path join ".gem" "ruby" $ruby_ver)
-let gem_bin = ($gem_home | path join "bin")
+use ~/scripts/nupm/nupm

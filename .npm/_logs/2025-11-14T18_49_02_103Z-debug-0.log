@@ -1,0 +1,17 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.6.0
+2 info using node@v24.9.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm config list
+7 verbose argv "config" "list" "--json"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-11-14T18_49_02_103Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-11-14T18_49_02_103Z-debug-0.log
+10 silly logfile done cleaning log files
+11 verbose cwd /data/data/com.termux/files/home
+12 verbose os Linux 4.19.191-ga4d7d0368cff
+13 verbose node v24.9.0
+14 verbose npm  v11.6.0
+15 verbose exit 0
+16 info ok

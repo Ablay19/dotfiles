@@ -1,0 +1,46 @@
+0 verbose cli /data/data/com.termux/files/usr/bin/node /data/data/com.termux/files/usr/bin/npm
+1 info using npm@11.6.0
+2 info using node@v24.9.0
+3 silly config load:file:/data/data/com.termux/files/usr/lib/node_modules/npm/npmrc
+4 silly config load:file:/data/data/com.termux/files/home/.npmrc
+5 silly config load:file:/data/data/com.termux/files/usr/etc/npmrc
+6 verbose title npm set
+7 verbose argv "set"
+8 verbose logfile logs-max:10 dir:/data/data/com.termux/files/home/.npm/_logs/2025-11-14T18_49_05_542Z-
+9 verbose logfile /data/data/com.termux/files/home/.npm/_logs/2025-11-14T18_49_05_542Z-debug-0.log
+10 silly logfile done cleaning log files
+11 verbose stack Error: 
+11 verbose stack Set a value in the npm configuration
+11 verbose stack
+11 verbose stack Usage:
+11 verbose stack npm set <key>=<value> [<key>=<value> ...] (See `npm config`)
+11 verbose stack
+11 verbose stack Options:
+11 verbose stack [-g|--global] [-L|--location <global|user|project>]
+11 verbose stack
+11 verbose stack Run "npm help set" for more info
+11 verbose stack     at Set.usageError (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/base-cmd.js:111:26)
+11 verbose stack     at Set.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/commands/set.js:20:18)
+11 verbose stack     at /data/data/com.termux/files/usr/lib/node_modules/npm/lib/npm.js:256:63
+11 verbose stack     at Object.start (/data/data/com.termux/files/usr/lib/node_modules/npm/node_modules/proc-log/lib/index.js:101:21)
+11 verbose stack     at #exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/npm.js:255:17)
+11 verbose stack     at async Npm.exec (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/npm.js:208:9)
+11 verbose stack     at async module.exports (/data/data/com.termux/files/usr/lib/node_modules/npm/lib/cli/entry.js:60:5)
+12 error code EUSAGE
+13 error
+13 error Set a value in the npm configuration
+13 error
+13 error Usage:
+13 error npm set <key>=<value> [<key>=<value> ...] (See `npm config`)
+13 error
+13 error Options:
+13 error [-g|--global] [-L|--location <global|user|project>]
+13 error
+13 error Run "npm help set" for more info
+14 verbose cwd /data/data/com.termux/files/home
+15 verbose os Linux 4.19.191-ga4d7d0368cff
+16 verbose node v24.9.0
+17 verbose npm  v11.6.0
+18 verbose exit 1
+19 verbose code 1
+20 error A complete log of this run can be found in: /data/data/com.termux/files/home/.npm/_logs/2025-11-14T18_49_05_542Z-debug-0.log

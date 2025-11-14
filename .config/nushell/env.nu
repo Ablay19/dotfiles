@@ -23,7 +23,6 @@ zoxide init nushell | save -f ~/.zoxide.nu
 $env.PATH = ($env.PATH | append "~/.local/bin")
 $env.PATH = ($env.PATH | append "~/go/bin")
 $env.PATH = ($env.PATH | append "~/google-cloud-sdk/bin/")
-source $"($nu.cache-dir)/carapace.nu"
 atuin init nu | save ~/.atuin.nu -f
 atuin gen-completions --shell nushell | save ~/.config/atuin/.atuin.nu -f
 $env.NUPM_HOME = '/data/data/com.termux/files/home/scripts/nupm'

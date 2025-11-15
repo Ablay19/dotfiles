@@ -1,8 +1,3 @@
-    },
-    {
-      "parameters": {
-        "html": "={{ $json[\"body\"] }}",
-        "cssSelector": "div#rss_block li a, ul.item_rss li a, h3.news-title a",
         "returnArray": true
       },
       "id": "2",
@@ -498,3 +493,8 @@ cat /tmp/paths.txt
 # أنشئ مجلداً محلياً وااسحب كل ملف منفرداً
 mkdir -p ~/bank_split
 while read -r p; do   name=$(basename "$p");   adb pull "$p" "~/bank_split/$name"; done < /tmp/paths.txt
+[ -d .config/nushell/modules ] && mv .config/nushell/modules nushell/.config/nushell/
+[[ -z "" ]]
+if [[ -z "" ]]; echo true; fi
+if [[ -z "" ]] ;then  echo true; fi
+if [[ -f .bash_history ]] ;then  echo true; fi

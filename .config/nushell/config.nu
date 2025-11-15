@@ -18,7 +18,7 @@
 #     config nu --doc | nu-highlight | less -R
 $env.EDITOR = "nvim"
 source $"($nu.cache-dir)/carapace.nu"
-source ~/.zoxide.nu
+source ~/dotfiles/.zoxide.nu
 $env.config.edit_mode = "vi"
 # Nushell Config File
 #
@@ -970,5 +970,4 @@ def --env up [] {
 # Source 
 source ~/.atuin.nu
 source ~/.config/atuin/.atuin.nu
-source $"($nu.cache-dir)/carapace.nu"
 # use ~/scripts/nupm/nupm

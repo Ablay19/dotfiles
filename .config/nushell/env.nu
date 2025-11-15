@@ -20,6 +20,7 @@ $env.CARAPACE_BRIDGES = 'zsh,fish,bash,inshellisense' # optional
 mkdir $"($nu.cache-dir)"
 carapace _carapace nushell | save --force $"($nu.cache-dir)/carapace.nu"
 zoxide init nushell | save -f ~/.zoxide.nu
+zoxide init nushell | save -f ~/dotfiles/.zoxide.nu
 $env.PATH = ($env.PATH | append "~/.local/bin")
 $env.PATH = ($env.PATH | append "~/go/bin")
 $env.PATH = ($env.PATH | append "~/google-cloud-sdk/bin/")

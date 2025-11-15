@@ -970,4 +970,5 @@ def --env up [] {
 # Source 
 source ~/.atuin.nu
 source ~/.config/atuin/.atuin.nu
+source $"($nu.cache-dir)/carapace.nu"
 # use ~/scripts/nupm/nupm

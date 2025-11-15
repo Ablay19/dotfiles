@@ -1,4 +1,5 @@
 ./.config/nushell/history.txt
+.termux/shell
 .config/gh*
 .ssh/*
 *.local

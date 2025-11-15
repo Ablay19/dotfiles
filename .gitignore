@@ -1,4 +1,5 @@
 ./.config/nushell/history.txt
+.config/gh*
 .ssh/*
 *.local
 *.cache

@@ -187,6 +187,7 @@ keymap_cursor = { emacs = "blink-underline", vim_insert = "blink-bar", vim_norma
 [stats]
 ## Set commands where we should consider the subcommand for statistics. Eg, kubectl get vs just kubectl
 common_subcommands = [
+  "pkg",  
 #   "apt",
 #   "cargo",
 #   "composer",
@@ -218,6 +219,7 @@ ignored_commands = [
   "cd",
   "ls",
   "l",  
+  "atuin",  
 #   "vi"
 ]
 
@@ -249,7 +251,7 @@ records = true
 
 [daemon]
 ## Enables using the daemon to sync. Requires the daemon to be running in the background. Start it with `atuin daemon`
-# enabled = false
+# enabled = true
 
 ## How often the daemon should sync in seconds
 # sync_frequency = 300
@@ -265,7 +267,7 @@ records = true
 # systemd_socket = false
 
 ## The port that should be used for TCP on non unix systems
-# tcp_port = 8889
+tcp_port = 8889
 
 # [theme]
 ## Color theme to use for rendering in the terminal.
@@ -277,7 +279,7 @@ records = true
 ##    https://ogeon.github.io/docs/palette/master/palette/named/index.html
 ## If you provide a custom theme file, it should be  called "NAME.toml" and the theme below
 ## should be the stem, i.e. `theme = "NAME"` for your chosen NAME.
-name = "autumn"
+name = "marine"
 
 ## Whether the theme manager should output normal or extra information to help fix themes.
 ## Boolean, true or false. If unset, left up to the theme manager.
